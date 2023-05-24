@@ -5,63 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title></title>
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
-    <section>
+    <section id="header" class="header">
         <h1>JavaScript-Quiz</h1>
         <h2>A test of your JavaScript Knowledge</h2>
+        <button id="startBtn">Start</button>
     </section>
 
-    <section>
-        <ul>
-            <li>Question1</li>
-            <li>Answer1</li>
-            <li>Answer2</li>
-            <li>Answer3</li>
-            <li>Answer4</li>
-        </ul>
-    </section>
+    <nav>
+        <p>Time Remaining: <span id="timer">80</span></p>
+    </nav>
 
-    <section>
+    <main id="questions" class="hide">
         <ul>
-            <li>Question2</li>
-            <li>Answer1</li>
-            <li>Answer2</li>
-            <li>Answer3</li>
-            <li>Answer4</li>
+            <li id="questionText"></li>
+            <li>
+                <button id="choice-0"></button>
+            </li>
+            <li>
+                <button id="choice-1"></button>
+            </li>
+            <li>
+                <button id="choice-2"></button>
+            </li>
+            <li>
+                <button id="choice-3"></button>
+            </li>
         </ul>
-    </section>
+    </main>
 
-    <section>
-        <ul>
-            <li>Question3</li>
-            <li>Answer1</li>
-            <li>Answer2</li>
-            <li>Answer3</li>
-            <li>Answer4</li>
-        </ul>
-    </section>
-
-    <section>
-        <ul>
-            <li>Question4</li>
-            <li>Answer1</li>
-            <li>Answer2</li>
-            <li>Answer3</li>
-            <li>Answer4</li>
-        </ul>
-    </section>
-
-    <section>
-        <ul>
-            <li>Question5</li>
-            <li>Answer1</li>
-            <li>Answer2</li>
-            <li>Answer3</li>
-            <li>Answer4</li>
-        </ul>
-    </section>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
