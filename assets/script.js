@@ -16,8 +16,8 @@ var questionCenter = [
     },
     {
         text: "Can you get me some wings? Oh and some garlic dipping sticks would be nice.",
-        choices: ["Wings?", "Dipping Sticks?", "Nigga, you are broke!", "Go eat the week old Little Ceasars in the fridge."],
-        answer: "Nigga, you are broke!"
+        choices: ["Wings?", "Dipping Sticks?", "Dude, you are broke!", "Go eat the week old Little Ceasars in the fridge."],
+        answer: "Dude, you are broke!"
     },
 ] 
 
