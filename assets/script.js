@@ -1,6 +1,7 @@
 var btnEl = document.getElementById("startBtn");
 var timeRemaining = 80;
 var currentQuestion = 0;
+var penalty = 10;
 
 var questionCenter = [
     {
@@ -12,6 +13,11 @@ var questionCenter = [
         text: "Where are you?",
         choices: ["here", "there", "nowhere", "yes"],
         answer: "here"
+    },
+    {
+        text: "Can you get me some wings? Oh and some garlic dipping sticks would be nice.",
+        choices: ["Wings?", "Dipping Sticks?", "Nigga, you are broke!", "Go eat the week old Little Ceasars in the fridge."],
+        answer: "Nigga, you are broke!"
     },
 ] 
 
@@ -28,7 +34,7 @@ function startTimer() {
         var timerEl = document.getElementById("timer")
         timeRemaining--;
 
-        timerEl.textContent = timeRemaining
+        timerEl.textContent = timeRemaining;
 
         if(timeRemaining <= 0) {
             clearInterval(quizInterval)
@@ -51,9 +57,17 @@ function showQuestion() {
     // document.getElementById("choice-3").textContent = questionChoices[3];
 }
 
-function checkAnswer() {
+function checkAnswer(event) {
+    var userChoice = event.target.textContent;
+    console.log(userChoice);
+
+    if (userChoice == questionCenter[currentQuestion].answer) {
+        
+    } else {
+        timeRemaining = timeRemaining - penalty;
+    }
+
     currentQuestion++;
-    
 
     showQuestion()
 }
